@@ -19,21 +19,20 @@ jobs:
       with:
         java-version: '17'
         distribution: 'temurin'
-        cache: gradle
 
-    - name: Grant Execute Permission for Gradle Wrapper
+    - name: Setup Gradle
+      uses: gradle/actions/setup-gradle@v4
+      with:
+        gradle-version: '8.10.2'
+
+    - name: Ensure correct KSP & Gradle environment
       run: |
-        if [ -f gradlew ]; then
-          chmod +x gradlew
-        fi
+        echo "gradle.version=8.10.2" >> $GITHUB_ENV
+        echo "org.gradle.jvmargs=-Xmx4g -Dfile.encoding=UTF-8 --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED" >> ~/.gradle/gradle.properties
 
     - name: Build Debug APK with Gradle
       run: |
-        if [ -f gradlew ]; then
-          ./gradlew assembleDebug
-        else
-          gradle assembleDebug
-        fi
+        gradle assembleDebug
 
     - name: Upload Debug APK Artifact
       uses: actions/upload-artifact@v4
