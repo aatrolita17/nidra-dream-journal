@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <!-- Ethereal Glow Behind Moon -->
+    <path
+        android:fillColor="#15FFFFFF"
+        android:pathData="M54,48m-30,0a30,30 0,1 1,60 0a30,30 0,1 1,-60 0" />
+
+    <!-- Centered Elegant Crescent Moon -->
+    <path
+        android:fillColor="#E2F1FF"
+        android:pathData="M54,24c13.25,0 24,10.75 24,24c0,13.25 -10.75,24 -24,24c-5.52,0 -10.6,-1.87 -14.65,-5.01c5.29,1.15 10.45,0.71 14.65,-2.22c5.96,-4.15 9.65,-11.11 9.65,-18.77c0,-7.66 -3.69,-14.62 -9.65,-18.77c-4.2,-2.93 -9.36,-3.37 -14.65,-2.22c4.05,-3.14 9.13,-5.01 14.65,-5.01z" />
+
+    <!-- Sparkle Star 1 -->
+    <path
+        android:fillColor="#FFD166"
+        android:pathData="M32,32l1.5,3.5l3.5,1.5l-3.5,1.5l-1.5,3.5l-1.5,-3.5l-3.5,-1.5l3.5,-1.5z" />
+
+    <!-- Sparkle Star 2 -->
+    <path
+        android:fillColor="#C77DFF"
+        android:pathData="M36,54l1,2.5l2.5,1l-2.5,1l-1,2.5l-1,-2.5l-2.5,-1l2.5,-1z" />
+        
+    <!-- Sparkle Star 3 -->
+    <path
+        android:fillColor="#FFAAF2"
+        android:pathData="M68,26l1,2.5l2.5,1l-2.5,1l-1,2.5l-1,-2.5l-2.5,-1l2.5,-1z" />
+</vector>

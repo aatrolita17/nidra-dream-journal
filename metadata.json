@@ -1,0 +1,6 @@
+{
+  "name": "Nidra",
+  "description": "AI Dream Journal & Subconscious Oracle",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
